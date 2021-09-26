@@ -1,38 +1,54 @@
 .App {
+  display: grid;
+  grid-gap: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activity-tracker {
+  padding: 20px;
+  font-size:xx-large; 
+  background-color: azure;
+  border: 2px solid;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-activity {
+  background-color: #f3fff0;
+  border: 2px solid;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.activity-info {
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr;
 }
 
-.App-link {
-  color: #61dafb;
+.activity-list {
+  display:grid;
+  grid-gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.activity-item {
+  background-color: rgb(250, 245, 220);
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.activity-summary {
+  display:grid;
+  grid-gap: 10px;
+  grid-template-rows: minmax(200px);
+}
+
+.longest-block {
+  background-color: #f5dce2;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.total-block {
+  background-color: rgb(250, 223, 239);
+  border: 2px solid;
+  border-radius: 10px;
 }
