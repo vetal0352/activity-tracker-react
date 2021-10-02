@@ -13,9 +13,13 @@
 }
 
 .add-activity {
+  display: grid;
+  word-spacing: normal;
   background-color: #f3fff0;
   border: 2px solid;
   border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
 }
 
 .activity-info {
